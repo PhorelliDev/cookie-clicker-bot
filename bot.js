@@ -1,4 +1,4 @@
-function runbot(seconds = 0.5) {
+function runbot(seconds = 0.5, rate = 60000) {
 
  // ======= Automatically generate cookies =============
  setInterval(function(){document.getElementById("bigCookie").click()}, seconds*1000);
@@ -28,13 +28,13 @@ function runbot(seconds = 0.5) {
      bestproduct = current_product;
    }
    bestproduct.click();
- }}, 300);
+ }}, 60000);
 }
 // ===========================================================================================
 
 // ======= Make decisions once every minute (gives time for cookies to generate) =============
 
-setInterval(function(){runbot(0.0000000000001)}, 60000);
+
 
 //============================================================================================
 
