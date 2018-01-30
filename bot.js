@@ -32,6 +32,11 @@ function runbot(seconds = 0.5) {
 }
 // ===========================================================================================
 
+// ======= Make decisions once every minute (gives time for cookies to generate) =============
 
-//  :D :D :D :D == Start the bot == :D :D :D :D 
-runbot();
+setInterval(function(){runbot(0.0000000000001)}, 60000);
+
+//============================================================================================
+
+//  Optional: just run the bot (doesn't give time for cookies to generate) 
+ // runbot();
